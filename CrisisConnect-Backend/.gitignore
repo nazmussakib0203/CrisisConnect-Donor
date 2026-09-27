@@ -1,0 +1,74 @@
+node_modules/
+
+# Build output
+dist/
+coverage/
+*.tsbuildinfo
+
+# Compiled TS output must never be committed alongside src — build to dist/ only
+src/**/*.js
+src/**/*.js.map
+src/**/*.d.ts
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency caches
+.npm/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnpm-store/
+
+# Test and tooling caches
+.jest/
+.eslintcache
+.nyc_output/
+
+# Uploads must go into each role's own uploads/<role> folder, never the
+# base uploads/ folder directly. Keep the 4 role folders in git via
+# .gitkeep, but ignore anything actually uploaded into them.
+uploads/*
+!uploads/admin/
+!uploads/donor/
+!uploads/ngo/
+!uploads/volunteer/
+uploads/admin/*
+uploads/donor/*
+uploads/ngo/*
+uploads/volunteer/*
+!uploads/admin/.gitkeep
+!uploads/donor/.gitkeep
+!uploads/ngo/.gitkeep
+!uploads/volunteer/.gitkeep
+
+# Local working notes for Claude-assisted sessions — not team docs
+memory.md
+CODINGSTYLE.md
+VIVA_NOTES.md
+VIVA_DRILLS.md
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
